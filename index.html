@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <title>MyNewProject</title>
+  <base href="http://development.dev-swapithub.com/dartakey/">   
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> 
+	<link rel="icon" type="/image/png" href="assets/images/fevicon.png" />
+	<!-- Owl Stylesheets -->
+  
+
+    
+  <link rel="stylesheet" href="styles.ded51c74b6175e3dffea.css"></head>
+  <body>
+
+  <app-root></app-root>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="assets/js/bootstrap.min.js"></script>  
+<script src="assets/js/back-to-top.js"></script>
+  
+  <script>
+    jQuery(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        jQuery(".collapse.in").each(function(){
+          jQuery(this).siblings(".panel-heading").find(".glyphicon").addClass("glyphicon-minus").removeClass("glyphicon-plus");
+        });
+        
+        // Toggle plus minus icon on show hide of collapse element
+        jQuery(".collapse").on('show.bs.collapse', function(){
+          $(this).parent().find(".glyphicon").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+        }).on('hide.bs.collapse', function(){
+          jQuery(this).parent().find(".glyphicon").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+        });
+    });
+</script>
+  
+<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.c6871e56cb80756a5498.js"></script><script type="text/javascript" src="scripts.b396f8b07bda75b928c2.js"></script><script type="text/javascript" src="main.b6e8690e3849dc2de823.js"></script></body>
+</html>
